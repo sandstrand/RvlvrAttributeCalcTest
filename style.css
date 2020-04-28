@@ -62,6 +62,23 @@ input, button, textarea, span.value{
 	position:relative;
 	top:2px;
 }
+span.profileattr{
+	display:inline-block;
+	font-size:1.3em;
+	margin:0px 0px 15px 0px;
+	
+	padding: 3px 7px 3px 7px;
+	border: solid 2px #ccc;
+	position:relative;
+	top:2px;
+
+}
+span.arrow{
+	font-size:4em;
+	text-align:center;
+	display: inline-block;
+	margin:auto;
+	}
 span.label{
 	margin-top:5px;
 }
@@ -183,12 +200,7 @@ li {
 .meta ul{
 	padding-left:2em;
 }
-span.arrow{
-	font-size:4em;
-	text-align:center;
-	display: block;
-	margin:auto;
-	}
+
 .meta ul li{ 
 }
 .datePickerDiv{

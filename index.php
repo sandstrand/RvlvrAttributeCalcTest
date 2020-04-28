@@ -7,7 +7,7 @@
 
 	$product_categories = array(
 		array(
-			'category_name' => 'Alpine skis',
+			'category_name' => 'Alpine ski',
 			'style' => 'alpineskis',
 			'attributes' =>	array(
 				array(
@@ -34,7 +34,7 @@
 					'attribute_name' => 'AlpineSkiLengthSenior',
 					'attribute_public_name' => 'Ski length',
 					'article_type' => 'AlpineSkiSenior',
-					'profile_attribute' => 'Length of person (sm)',
+					'profile_attribute' => 'Length of person (cm)',
 					'get' => 'length',
 					'attribute_calc' => 'Length of person - 14cm',
 					'allow_less' => 6,
@@ -85,7 +85,7 @@
 			)
 		),
 		array(
-			'category_name' => 'Alpine boots',
+			'category_name' => 'Alpine boot',
 			'style' => 'alpineboots',
 			'attributes' =>	array(
 				array(
@@ -121,7 +121,7 @@
 			)
 		),
 		array(
-			'category_name' => 'Cross country skis',
+			'category_name' => 'Cross country ski',
 			'style' => 'crosscountryskis',
 			'attributes' =>	array(
 				array(
@@ -164,7 +164,7 @@
 			)
 		),
 		array(
-			'category_name' => 'Cross country boots',
+			'category_name' => 'Cross country boot',
 			'style' => 'crosscountryboots',
 			'attributes' =>	array(
 				array(
@@ -190,7 +190,7 @@
 			)
 		),
 		array(
-			'category_name' => 'Snowboards',
+			'category_name' => 'Snowboard',
 			'style' => 'snowboards',
 			'attributes' =>	array(
 				array(
@@ -223,7 +223,7 @@
 		
 		),
 		array(
-			'category_name' => 'Snowboard boots',
+			'category_name' => 'Snowboard boot',
 			'style' => 'snowboardboots',
 			'attributes' =>	array(
 				array(
@@ -249,7 +249,7 @@
 			)
 		),
 		array(
-			'category_name' => 'Skates',
+			'category_name' => 'Skate',
 			'style' => 'skates',
 			'attributes' =>	array(
 				array(
@@ -436,33 +436,34 @@
 	if($_GET){	
 		foreach($product_categories as $category){
 			echo '<div class="col-md-12"><div class="content ' . $category['style'] . '">';
-				echo '<span class="header">Article type</span><br />';
-				echo '<h2>' . $category['category_name'] . '</h2>';
+				echo '<span class="header">Product category</span><br />';
+				echo '<h2>' . $category['category_name'] . 's</h2>';
 				foreach($category['attributes'] as $attribute){
 					echo '<hr />';
 					echo '<div class="row">';
-						echo '<div class="col-md-2">';
-						echo '<span class="header">Product(s) - Subset of article models</span><br />';
+						echo '<div class="col-md-4">';
+						echo '<span class="header">Articles - Subsets of article models</span><br />';
 							foreach($attribute['products'] as $product){
-								echo '<span class="label">' . $product['product_name'] . '</span><br />';
+								echo '<span class="label">' . $category['category_name'] . ' ' . $product['product_name'] . '</span><br />';
 							}
 						echo '</div>';
 						echo '<div class="col-md-3">';
 							echo '<div class="row">';
 								echo '<div class="col-md-12">';	
-									echo '<span class="">' . 'Profile attribute: '. '</span><br />';
+									echo '<span class="">' . 'Required profile attribute: '. '</span><br />';
 								echo '</div>';
 								echo '<div class="col-sm-7">';
 									echo '<span class="label">' . $attribute['profile_attribute']. '</span>';
 								echo '</div>';
-								echo '<div class="col-sm-5">';	
+								echo '<div class="col-sm-3">';	
 									echo '<span class="value">' .$_GET[$attribute['get']] . '</span>';	
 								echo '</div>';
+								echo '<div class="col-md-2">' . '<span class="arrow">></span>' . '</div>';
 							echo '</div>';
 							
 						echo '</div>';
-						echo '<div class="col-md-1">' . '<span class="arrow">></span>' . '</div>';
-						echo '<div class="col-md-6">';
+					
+						echo '<div class="col-md-5">';
 						
 							
 
