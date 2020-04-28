@@ -1,0 +1,211 @@
+
+body{
+	font-family: 'Cairo', sans-serif;
+	font-size:15px;
+	color: #333;
+}
+div.content{
+	margin: 15px auto 15px auto;
+	padding:15px;
+	background-color: #f2f2f2;
+	border: solid 1px #ddd;
+	height: calc(100% - 30px);
+}
+div.main{
+	max-width:1600px;
+	margin: 15px auto 15px auto;
+}
+div.slim{
+	background:none;
+	padding:0px;
+	border:none;
+	margin-top:0px;
+	margin-bottom:0px;
+			
+}
+a{
+	font-size:1.3em;
+}
+H1, H2, H3, H4{
+	margin:0px 0px 10px 0px;
+}
+h1{
+	font-size:3.1em;
+}
+h2{
+	font-size:2.5em;
+}
+
+label, span.value, span.label{
+	display:inline-block;
+	font-size:1.3em;
+}
+span.calc{
+	font-family: monospace;
+	font-size: 1.1em;
+	display:block;
+	padding:5px;
+	background-color: rgba(200, 200, 200, 0.4);
+	margin:0px 0px 15px 0px;
+}
+#other-intervals label{
+	text-align:right;
+}
+
+input, button, textarea, span.value{
+	display:inline-block;
+	font-size:1.3em;
+	margin:0px 0px 15px 0px;
+	width:100%;
+	padding: 3px 7px 3px 7px;
+	border: solid 2px #ccc;
+	position:relative;
+	top:2px;
+}
+span.label{
+	margin-top:5px;
+}
+input[type=checkbox]{
+	height: 30px;
+	border: solid 2px #ccc;
+	position: relative;
+	right:0px;
+	top:8px;
+	width:30px;
+	margin-right:15px;
+}
+
+textarea{
+	height:200px;
+	font-family:monospace;
+	font-size:12px;
+}
+button{
+
+	background-color:#333;
+	color:#fff;
+	border-radius:4px;
+	margin: 0px;
+	cursor: pointer;
+}
+button#add-interval{
+
+}
+table{
+	background-color:#fff;
+	width:100%;
+	border: solid 1px #ddd;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+table thead tr{
+	background-color:#ccc;
+}
+table tr td{
+	font-family:monospace;
+	font-size:13px;
+	padding: 2px 5px 2px 5px;
+	white-space: nowrap;
+	border-right:solid 1px #fff;
+}
+table.price_table tbody tr:nth-child(odd){
+	background-color: #f1f1f1;
+}
+table tbody tr.pickup:nth-child(even), table tbody tr.return:nth-child(even){
+	background-color:#009bff60;
+}
+table tbody tr.pickup:nth-child(odd), table tbody tr.return:nth-child(odd){
+	background-color:#009bff40;
+}
+table tbody tr.lease:nth-child(even){
+	background-color:#28a74560;
+}
+table tbody tr.lease:nth-child(odd){
+	background-color:#28a74540;
+}
+table tbody tr.buffer:nth-child(even){
+	background-color:#ffc10760;
+}
+table tbody tr.buffer:nth-child(odd){
+	background-color:#ffc10740;
+}
+
+table.lease_table tr td:nth-child(1){
+
+}
+table tr td:last-child{
+	border-right: none;
+}
+
+table tr td.comment{
+	white-space: pre-wrap;	
+}
+table tr td.breakpoint{
+	font-weight: bold;
+}
+.row > hr{
+width:100%;
+	margin: 0px 10px 10px 10px;
+	border-color: #8a8a8a;
+
+}
+hr{
+	width:100%;
+	margin: 0px 0px 10px 0px;
+	border-color: #8a8a8a;
+}
+p{
+	margin-bottom:8px;
+}
+p.info{
+	font-style: italic;
+	font-size:1.2em;
+	display:block;
+	padding:15px;
+	border: solid 2px #999;
+}
+.tooltiped{
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	cursor: pointer;
+}
+ul {
+	margin-bottom: 10px;
+	padding-left: 1em;
+}
+li {
+	display:block;
+	width:100%;
+}
+.debug li{
+	list-style: none;
+}
+.meta ul{
+	padding-left:2em;
+}
+span.arrow{
+	font-size:4em;
+	text-align:center;
+	display: block;
+	margin:auto;
+	}
+.meta ul li{ 
+}
+.datePickerDiv{
+	margin-bottom:15px;
+}
+div.content > div.row > div.col-md-12{
+	margin-top: 15px;
+}
+div.alpineskis, div.alpineboots{
+	background-color:#e9f5ff;
+}
+div.crosscountryskis, div.crosscountryboots{
+	background-color:#e9fff0;
+}
+div.snowboards, div.snowboardboots{
+	background-color:#ffffe0;
+}
+div.skates{
+	background-color:#ffe9e9;
+}
